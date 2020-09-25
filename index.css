@@ -1,0 +1,107 @@
+:root {
+    --white-note-width: 80px;
+    --white-note-height: 300px;
+    --black-note-width: 30px;
+}
+
+#keys {
+    position: absolute;
+    display: block;
+    position: relative;
+    min-width: 100vw;
+}
+
+.white-keys {
+    position: absolute;
+}
+
+.black-keys {
+    position: absolute;
+}
+
+.white-note {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    height: var(--white-note-height);
+    width: var(--white-note-width);
+    border: 1px solid black;
+}
+
+#A {
+    left: calc(var(--white-note-width) * 0);
+}
+
+#B {
+    left: calc(var(--white-note-width) * 1);
+}
+
+#C {
+    left: calc(var(--white-note-width) * 2);
+}
+
+#D {
+    left: calc(var(--white-note-width) * 3);
+}
+
+#E {
+    left: calc(var(--white-note-width) * 4);
+}
+
+#F {
+    left: calc(var(--white-note-width) * 5);
+}
+
+#G {
+    left: calc(var(--white-note-width) * 6);
+}
+
+.black-note {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    height: calc(var(--white-note-height) * 0.60);
+    width: var(--black-note-width);
+    border: 1px solid black;
+}
+
+#A-flat {
+    left: 0px;
+    width: calc(var(--black-note-width) / 2);
+}
+
+#A-sharp {
+    left: calc(calc(var(--white-note-width) * 1) - calc(var(--black-note-width) / 2));
+}
+
+#C-sharp {
+    left: calc(calc(var(--white-note-width) * 3) - calc(var(--black-note-width) / 2));
+}
+
+#D-sharp {
+    left: calc(calc(var(--white-note-width) * 4) - calc(var(--black-note-width) / 2));
+}
+
+#F-sharp {
+    left: calc(calc(var(--white-note-width) * 6) - calc(var(--black-note-width) / 2));
+}
+
+#G-sharp {
+    left: calc(calc(var(--white-note-width) * 7) - calc(var(--black-note-width) / 2));
+    width: calc(var(--black-note-width) / 2);
+}
+
+.timer-bar {
+    width: 100vw;
+    margin-top: 350px;
+    background-color: red;
+    height: 15px;
+    display: block;
+}
+
+.running-out {
+    transition: all 5s linear;
+    width: 0;
+}

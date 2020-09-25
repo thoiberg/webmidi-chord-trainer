@@ -1,0 +1,35 @@
+<html lang="en-GB">
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/webmidi"></script>
+        <script src="index.js"></script>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="content">
+            <h1>Webmidi playaround</h1>
+            <button id="start-game" type="button">Start Game!</button>
+            <h2 id="result">Score:  </h2>
+            <h2 id="chord-name">Press: </h2>
+            <div id="keys">
+                <div class="white-keys">
+                    <span id="A" class="white-note A"></span>
+                    <span id="B" class="white-note B"></span>
+                    <span id="C" class="white-note C"></span>
+                    <span id="D" class="white-note D"></span>
+                    <span id="E" class="white-note E"></span>
+                    <span id="F" class="white-note F"></span>
+                    <span id="G" class="white-note G"></span>
+                </div>
+                <div class="black-keys">
+                    <div id="A-flat" class="black-note Ab"></div>
+                    <div id="A-sharp" class="black-note A#"></div>
+                    <div id="C-sharp" class="black-note C#"></div>
+                    <div id="D-sharp" class="black-note D#"></div>
+                    <div id="F-sharp" class="black-note F#"></div>
+                    <div id="G-sharp" class="black-note G#"></div>
+                </div>
+            </div>
+            <div id="timer-bar" class="timer-bar"></div>
+        </div>
+    </body>
+</html>
